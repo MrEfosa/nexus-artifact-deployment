@@ -10,7 +10,7 @@ The project emphasizes **automation, reproducibility, and professional DevOps pr
 ## Technologies Used
 - **Cloud / Server:** DigitalOcean Droplet (Ubuntu Linux)  
 - **Artifact Repository:** Sonatype Nexus 3  
-- **Programming Language:** Java 17  
+- **Programming Language:** Java 8  
 - **Build Tools:** Gradle, Maven  
 - **Automation / Scripting:** Bash  
 
