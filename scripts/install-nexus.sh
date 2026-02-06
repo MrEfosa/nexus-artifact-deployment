@@ -10,7 +10,7 @@ sudo apt update -y
 
 # Install Java
 echo "Installing Java..."
-sudo apt install -y openjdk-17-jdk wget
+sudo apt install -y openjdk-8-jdk wget
 
 # Create nexus user if it doesn't exist
 NEXUS_USER="nexus"
