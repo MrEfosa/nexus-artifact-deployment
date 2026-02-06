@@ -43,6 +43,4 @@ After running the installation script, Nexus Repository Manager will be availabl
 
 [Access Nexus Repository Manager](http://YOUR_SERVER_IP:8081)
 
-The initial admin password can be retrieved from:
-
 
