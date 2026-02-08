@@ -1,4 +1,4 @@
-# Nexus Artifact Deployment — DevOps Demo Project
+# Nexus Artifact Deployment 
 
 ## 📌 Overview
 
@@ -54,9 +54,7 @@ Deploy Nexus Repository Manager from scratch on a Linux server using automation.
 
 ### Automated Installation Script
 
-Location:
-
-scripts/install-nexus.sh
+**Location:** scripts/install-nexus.sh
 
 This script performs:
 
@@ -74,12 +72,7 @@ chmod +x install-nexus.sh
 ./install-nexus.sh
 
 ```
-Access Nexus UI:
-
-
-http://SERVER-IP:8081
-
-
+**Access Nexus UI:** http://SERVER-IP:8081
 
 ## Notes / Best Practices
 
