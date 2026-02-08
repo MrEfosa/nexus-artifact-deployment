@@ -1,60 +1,92 @@
-# Nexus Artifact Publishing Project
+# Nexus Artifact Deployment — DevOps Demo Project
 
-## Project Overview
-This project demonstrates the setup, configuration, and use of **Sonatype Nexus Repository Manager** on a Linux server hosted on DigitalOcean. It includes deploying **Java Gradle** and **Java Maven** projects to Nexus, demonstrating a complete artifact lifecycle from build to repository publishing.
+## 📌 Overview
 
-The project emphasizes **automation, reproducibility, and professional DevOps practices**.
+This project demonstrates a complete DevOps workflow for deploying and managing a **Nexus Repository Manager** on a cloud server and publishing Java artifacts using both **Gradle** and **Maven**.
+
+The goal is to simulate a real-world artifact management pipeline:
+
+- Provision a Linux server
+- Install and configure Nexus Repository Manager
+- Automate setup using shell scripts
+- Build Java applications
+- Publish artifacts to Nexus repositories
+- Follow secure credential practices
 
 ---
 
-## Technologies Used
-- **Cloud / Server:** DigitalOcean Droplet (Ubuntu Linux)  
-- **Artifact Repository:** Sonatype Nexus 3  
-- **Programming Language:** Java 8  
-- **Build Tools:** Gradle, Maven  
-- **Automation / Scripting:** Bash  
-
----
-
-## Project Structure
+## 🧱 Architecture Summary
 
 ```
 nexus-artifact-deployment/
 │
-├── scripts/                  # All your automation scripts
-│   ├── install-nexus.sh      # Already pushed
-│   ├── publish-gradle.sh     # Gradle publishing
-│   └── publish-maven.sh      # Maven publishing
+├── scripts/                  
+│   ├── install-nexus.sh      
+│   ├── publish-gradle.sh    
+│   └── publish-maven.sh    
 │
-├── java-app/                  # Gradle project
+├── java-app/              
 │   ├── build.gradle
 │   ├── gradle.properties (if used)
 │   ├── settings.gradle
 │   └── src/
 │
-├── java-maven-app/            # Maven project
+├── java-maven-app/       
 │   ├── pom.xml
 │   └── src/
 │
-├── screenshots/               # Screenshots of UI, Nexus repositories, builds, etc.
+├── screenshots/         
 │
-└── README.md                  # Project documentation
+└── README.md           
 ```
-## Server & Nexus Setup
+## 🚀 Phase 1 — Nexus Installation & Configuration
 
-Provision a DigitalOcean Ubuntu Droplet, create a non-root user, and install Java 8.
+### Objective
 
-Run the included script to automatically download, configure, and start Nexus:
+Deploy Nexus Repository Manager from scratch on a Linux server using automation.
+
+### Environment
+
+- Cloud provider: DigitalOcean
+- OS: Ubuntu Linux
+- Java: OpenJDK 8
+- Nexus Repository Manager 3
+
+### Automated Installation Script
+
+Location:
+
+scripts/install-nexus.sh
+
+This script performs:
+
+- System updates
+- Java installation
+- Nexus download & extraction
+- User creation (`nexus`)
+- Permission setup
+- Nexus startup configuration
+
+### Run Installation
 
 ```bash
 chmod +x install-nexus.sh
 ./install-nexus.sh
 
 ```
-## Accessing Nexus
-
-After running the installation script, Nexus Repository Manager will be available in your browser:
-
-[Access Nexus Repository Manager](http://YOUR_SERVER_IP:8081)
+Access Nexus UI:
 
 
+http://SERVER-IP:8081
+
+
+
+## Notes / Best Practices
+
+- Credentials should never be pushed to GitHub.
+
+- Use .gitignore to exclude build artifacts and sensitive files.
+
+- Folder structure separates scripts and projects for clarity.
+
+- **Nexus repositories used:** Maven Snapshots, Maven Public (proxy)
