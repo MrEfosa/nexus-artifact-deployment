@@ -1,0 +1,5 @@
+.idea/*
+target
+Jenkinsfile
+publish-maven.sh
+script.groovy
