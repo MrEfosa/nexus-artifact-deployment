@@ -18,14 +18,28 @@ The project emphasizes **automation, reproducibility, and professional DevOps pr
 
 ## Project Structure
 
-nexus-artifact-publishing/
-├── README.md
-├── scripts/
-│ ├── install-nexus.sh # Installs and configures Nexus
-│ └── publish-artifacts.sh # Builds and uploads Gradle/Maven projects
-├── gradle-app/ # Java Gradle project
-└── maven-app/ # Java Maven project
-
+```
+nexus-artifact-deployment/
+│
+├── scripts/                  # All your automation scripts
+│   ├── install-nexus.sh      # Already pushed
+│   ├── publish-gradle.sh     # Gradle publishing
+│   └── publish-maven.sh      # Maven publishing
+│
+├── java-app/                  # Gradle project
+│   ├── build.gradle
+│   ├── gradle.properties (if used)
+│   ├── settings.gradle
+│   └── src/
+│
+├── java-maven-app/            # Maven project
+│   ├── pom.xml
+│   └── src/
+│
+├── screenshots/               # Screenshots of UI, Nexus repositories, builds, etc.
+│
+└── README.md                  # Project documentation
+```
 ## Server & Nexus Setup
 
 Provision a DigitalOcean Ubuntu Droplet, create a non-root user, and install Java 8.
