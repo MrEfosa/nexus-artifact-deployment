@@ -192,13 +192,13 @@ Default repositories used:
 - Improve dependency reliability
 
 ## ✅ Outcome
-
+```
 ✔ Nexus deployed and running
 ✔ Automated installation pipeline
 ✔ Gradle artifact successfully published
 ✔ Maven artifact successfully deployed
 ✔ Secure configuration practices followed
-
+```
 ## 📌 Future Improvements
 
 - CI/CD integration
