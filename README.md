@@ -206,3 +206,7 @@ Default repositories used:
 - Automated artifact versioning
 - Nexus backup strategy
 - Reverse proxy configuration
+
+## Author
+**ONYEKAOZURU TOCHUKWU DAVID**  
+DevOps Engineer
