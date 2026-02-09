@@ -86,7 +86,7 @@ chmod +x install-nexus.sh
 ![Nexus Installation](screenshots/nexus-installation.png)
 
 ### Nexus Running
-![Nexus Running](screenshots/nexus_running.png)
+![Nexus Running](screenshots/nexus_run.png)
 
 **Access Nexus UI:** http://SERVER-IP:8081
 
