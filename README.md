@@ -86,15 +86,15 @@ chmod +x install-nexus.sh
 ![Nexus Installation](screenshots/nexus-installation.png)
 
 ### Nexus Running
-![Nexus Running](screenshots/nexus-running.png)
+![Nexus Running](screenshots/nexus_running.png)
 
 **Access Nexus UI:** http://SERVER-IP:8081
 
 ### Nexus UI Login
-![Nexus UI Login](screenshots/nexus-ui-login.png)
+![Nexus UI Login](screenshots/nexus_ui_login.png)
 
 ### Nexus Dashboard
-![Nexus Dashboard](screenshots/nexus-dashboard.png)
+![Nexus Dashboard](screenshots/nexus_dashboard.png)
 
 ## 📦 Phase 2 — Artifact Publishing Workflow
 
