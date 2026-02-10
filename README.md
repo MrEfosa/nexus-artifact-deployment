@@ -124,7 +124,7 @@ Or via automation:
 ```
 ./scripts/publish-gradle.sh
 ```
-### 📸 Screenshot — Maven Artifact in Nexus
+### 📸 Screenshot — Gradle Artifact in Nexus
 
 ![java-app](screenshots/gradle-nexus.png)
 
@@ -185,7 +185,7 @@ Default repositories used:
 
 ## 🎯 Real-World Relevance
 
-- This setup mirrors enterprise environments where teams:
+This setup mirrors enterprise environments where teams:
 - Centralize artifact storage
 - Control versioned releases
 - Automate build publishing
