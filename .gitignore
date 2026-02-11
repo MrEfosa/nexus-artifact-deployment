@@ -1,0 +1,10 @@
+.gradle/
+build/
+.idea/
+gradle.properties
+*.DS_Store
+target
+Jenkinsfile
+publish-maven.sh
+script.groovy
+
