@@ -1,6 +1,6 @@
 # Nexus Artifact Deployment 
 
-## 📌 Overview
+##  Overview
 
 This project demonstrates a complete DevOps workflow for deploying and managing a **Nexus Repository Manager** on a cloud server and publishing Java artifacts using both **Gradle** and **Maven**.
 
@@ -15,7 +15,7 @@ The goal is to simulate a real-world artifact management pipeline:
 
 ---
 
-## 🧱 Architecture Summary
+##  Architecture Summary
 ```
 Java App (Gradle/Maven)
         ↓
@@ -26,7 +26,7 @@ Nexus Repository Manager
 Artifact storage & versioning
 ```
 
-## 📁 Project Structure
+##  Project Structure
 ```
 nexus-artifact-deployment/
 │
@@ -49,7 +49,7 @@ nexus-artifact-deployment/
 │
 └── README.md           
 ```
-## 🚀 Phase 1 — Nexus Installation & Configuration
+##  Phase 1 — Nexus Installation & Configuration
 
 ### Objective
 
@@ -96,14 +96,14 @@ chmod +x install-nexus.sh
 ### Nexus Dashboard
 ![Nexus Dashboard](screenshots/nexus_dashboard.png)
 
-## 📦 Phase 2 — Artifact Publishing Workflow
+##  Phase 2 — Artifact Publishing Workflow
 
 This phase demonstrates publishing Java artifacts into Nexus using:
 
 - Gradle
 - Maven
 
-### 🔹 Gradle Artifact Publishing
+###  Gradle Artifact Publishing
 
 **Project Location:** `java-app/`
 
@@ -128,7 +128,7 @@ Or via automation:
 
 ![java-app](screenshots/gradle-nexus.png)
 
-### 🔹 Maven Artifact Publishing
+###  Maven Artifact Publishing
 
 **Project Location:** java-maven-app/
 
@@ -149,7 +149,7 @@ Or via automation:
 ```
 ./scripts/publish-maven.sh
 ```
-### 📸 Screenshot — Maven Artifact in Nexus
+###  Screenshot — Maven Artifact in Nexus
 
 ![java-maven-app](screenshots/maven-nexus.png)
 
@@ -173,7 +173,7 @@ Default repositories used:
 - **Nexus repositories used:** Maven Snapshots, Maven Public (proxy)
 
 
-## 🧠 Skills Demonstrated
+##  Skills Demonstrated
 
 - Linux server provisioning
 - Shell scripting automation
@@ -183,7 +183,7 @@ Default repositories used:
 - Secure credential handling
 - DevOps documentation practices
 
-## 🎯 Real-World Relevance
+##  Real-World Relevance
 
 This setup mirrors enterprise environments where teams:
 - Centralize artifact storage
@@ -191,7 +191,7 @@ This setup mirrors enterprise environments where teams:
 - Automate build publishing
 - Improve dependency reliability
 
-## ✅ Outcome
+##  Outcome
 ```
 ✔ Nexus deployed and running
 ✔ Automated installation pipeline
@@ -199,7 +199,7 @@ This setup mirrors enterprise environments where teams:
 ✔ Maven artifact successfully deployed
 ✔ Secure configuration practices followed
 ```
-## 📌 Future Improvements
+##  Future Improvements
 
 - CI/CD integration
 - Dockerized Nexus deployment
