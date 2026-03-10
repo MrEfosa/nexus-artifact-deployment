@@ -153,7 +153,7 @@ Or via automation:
 
 ![java-maven-app](screenshots/maven-nexus.png)
 
-### 🗂 Nexus Repository Usage
+###  Nexus Repository Usage
 
 Default repositories used:
 
